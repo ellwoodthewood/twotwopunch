@@ -1,7 +1,12 @@
 twotwopunch
 ===========
 
-This is a little project to try and get both TCP and UDP scans on the same scan for nmap, and pass all discovered HTTP ports to nikto for scanning. Original information follows below:
+This is an update to the one-two punch script. The original script would separately scan TCP and UDP, to create two separate nmap scans. This update gets both TCP and UDP ports passed on the same scan for nmap.
+
+Additionally, all discovered HTTP ports will be passed to nikto for scanning.
+
+
+Original information follows below:
 
 Nmap is by far the most comprehensive port scanner, able to identify services, fingerprint operating systems, and even run several scripts against the services to identify potential vulnerabilities. This helps cut down the manual work involved in service enumeration. Nmap uses a default list of ports when none are provided by the attacker. This can cause nmap to miss certain ports that are not in its default list. There is the option to let nmap scan all 65,535 ports on each machine, but as you can imagine, this will take a considerable amount of time, especially if you’re scanning a lot of targets.
 
